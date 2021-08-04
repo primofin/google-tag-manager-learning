@@ -46,7 +46,11 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTG3DPB" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Hello World";
+    }
+  </script>
   <main>
     <!-- Hero section -->
     <section aria-label="hero section">
@@ -166,6 +170,16 @@
       <li><a href="#" class="fa fa-google" alt="google icon" aria-hidden="true"></a></li>
     </ul>
   </footer>
+  <script>
+    function onClick() {
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'button',
+        eventAction: 'click',
+        eventLabel: 'google analytics'
+      });
+    }
+  </script>
   <script src="https://kit.fontawesome.com/cc4be81cad.js" crossorigin="anonymous"></script>
 </body>
 
