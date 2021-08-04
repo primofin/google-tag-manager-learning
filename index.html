@@ -153,7 +153,7 @@
         <input type="text" id="lname" name="lname"><br><br>
         <label for="user-message"></label>
         <textarea name="user-message" id="user-message" cols="30" rows="3"></textarea>
-        <button type="submit" value="Submit">
+        <button type="submit" value="Submit" onclick="handleSubmit()">
           Submit
         </button>
       </form>
@@ -171,7 +171,7 @@
     </ul>
   </footer>
   <script>
-    function onClick() {
+    function handleSubmit() {
       ga('send', {
         hitType: 'event',
         eventCategory: 'button',
